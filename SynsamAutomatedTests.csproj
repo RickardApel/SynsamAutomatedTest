@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+        <RunSettingsFilePath>C:\Users\46720\Desktop\EXAMENSARBET SYNSAM\ExamensArbete\SynsamAutomatedTests\config.runsettings</RunSettingsFilePath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.40.0" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+        <PackageReference Include="Microsoft.Playwright" Version="1.40.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Testbase\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="config.runsettings">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
